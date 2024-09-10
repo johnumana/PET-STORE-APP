@@ -8,17 +8,16 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class CardProductComponent implements OnInit{
 
+  @Input() product = {
+    name: '',
+    price: 0,
+    description: '',
+    inventory: 0,
+    image: ''
+  };
+  
   cantidad: number = 0;
   soldOut: boolean = false;
-
-//Inicio objeto de producto.
-product = {
-  name: 'Bike',
-  price: 120,
-  description: 'Product Description',
-  inventory: 10,
-  image: 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
-}
 //fin objeto de producto.
   constructor() { }
 
