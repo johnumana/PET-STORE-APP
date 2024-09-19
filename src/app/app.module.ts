@@ -8,6 +8,8 @@ import { HeaderComponent } from './header/header.component';
 import { CatalogoComponent } from './components/catalogo/catalogo.component';
 import { AboutComponent } from './components/about/about.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -15,14 +17,17 @@ import { HttpClientModule } from '@angular/common/http';
     CardProductComponent,
     HeaderComponent,
     CatalogoComponent,
-    AboutComponent
+    AboutComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
